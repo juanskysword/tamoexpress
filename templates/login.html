@@ -2,19 +2,22 @@
 {% block title %}Login Page{% endblock %}
 
 {% block content %}
-<form action="#" method="post">
-	<p>First Name:</p>
-	<p><input type="text" name="fnm" /></p>
-	<p>Last Name:</p>
-	<p><input type="text" name="lnm" /></p>
-	<p>Email:</p>
-	<p><input type="text" name="email" /></p>                                                                                             
-	<p>Password:</p>
-	<p><input type="text" name="ps" /></p>
-	<p>Phone Number:</p>
-	<p><input type="text" name="number" /></p>
-	<p>Address:</p>
-	<p><input type="text" name="address" /></p>
-	<p><input type="submit" value="submit"/></p>
-</form>
+<link rel="stylesheet" href="css/css/login.css">
+<div class="login-page">
+	<div class="form">
+	  <form class="register-form">
+		<input type="text" placeholder="name"/>
+		<input type="password" placeholder="password"/>
+		<input type="text" placeholder="email address"/>
+		<button>create</button>
+		<p class="message">Already registered? <a href="#">Sign In</a></p>
+	  </form>
+	  <form class="login-form">
+		<input type="text" placeholder="username"/>
+		<input type="password" placeholder="password"/>
+		<button>login</button>
+		<p class="message">Not registered? <a href="#">Create an account</a></p>
+	  </form>
+	</div>
+  </div>
 {% endblock %}
